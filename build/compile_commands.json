@@ -1,0 +1,20 @@
+[
+{
+  "directory": "E:/proiect/Cmake/c_make_planing_test/build",
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\npc_map.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\npc_map.cpp",
+  "file": "E:/proiect/Cmake/c_make_planing_test/npc_map.cpp",
+  "output": "CMakeFiles/planning_main.dir/npc_map.cpp.obj"
+},
+{
+  "directory": "E:/proiect/Cmake/c_make_planing_test/build",
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\planning_main.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\planning_main.cpp",
+  "file": "E:/proiect/Cmake/c_make_planing_test/planning_main.cpp",
+  "output": "CMakeFiles/planning_main.dir/planning_main.cpp.obj"
+},
+{
+  "directory": "E:/proiect/Cmake/c_make_planing_test/build",
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\process.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\process.cpp",
+  "file": "E:/proiect/Cmake/c_make_planing_test/process.cpp",
+  "output": "CMakeFiles/planning_main.dir/process.cpp.obj"
+}
+]

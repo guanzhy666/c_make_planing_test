@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named common
+
+# Build rule for target.
+common: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common
+.PHONY : common
+
+# fast build rule for target.
+common/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/build
+.PHONY : common/fast
+
+#=============================================================================
 # Target rules for targets named planning_main
 
 # Build rule for target.
@@ -127,30 +140,6 @@ planning_main: cmake_check_build_system
 planning_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/build
 .PHONY : planning_main/fast
-
-npc_map.obj: npc_map.cpp.obj
-.PHONY : npc_map.obj
-
-# target to build an object file
-npc_map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/npc_map.cpp.obj
-.PHONY : npc_map.cpp.obj
-
-npc_map.i: npc_map.cpp.i
-.PHONY : npc_map.i
-
-# target to preprocess a source file
-npc_map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/npc_map.cpp.i
-.PHONY : npc_map.cpp.i
-
-npc_map.s: npc_map.cpp.s
-.PHONY : npc_map.s
-
-# target to generate assembly for a file
-npc_map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/npc_map.cpp.s
-.PHONY : npc_map.cpp.s
 
 planning_main.obj: planning_main.cpp.obj
 .PHONY : planning_main.obj
@@ -176,29 +165,53 @@ planning_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/planning_main.cpp.s
 .PHONY : planning_main.cpp.s
 
-process.obj: process.cpp.obj
-.PHONY : process.obj
+src/npc_map.obj: src/npc_map.cpp.obj
+.PHONY : src/npc_map.obj
 
 # target to build an object file
-process.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/process.cpp.obj
-.PHONY : process.cpp.obj
+src/npc_map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/npc_map.cpp.obj
+.PHONY : src/npc_map.cpp.obj
 
-process.i: process.cpp.i
-.PHONY : process.i
+src/npc_map.i: src/npc_map.cpp.i
+.PHONY : src/npc_map.i
 
 # target to preprocess a source file
-process.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/process.cpp.i
-.PHONY : process.cpp.i
+src/npc_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/npc_map.cpp.i
+.PHONY : src/npc_map.cpp.i
 
-process.s: process.cpp.s
-.PHONY : process.s
+src/npc_map.s: src/npc_map.cpp.s
+.PHONY : src/npc_map.s
 
 # target to generate assembly for a file
-process.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/process.cpp.s
-.PHONY : process.cpp.s
+src/npc_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/npc_map.cpp.s
+.PHONY : src/npc_map.cpp.s
+
+src/process.obj: src/process.cpp.obj
+.PHONY : src/process.obj
+
+# target to build an object file
+src/process.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.obj
+.PHONY : src/process.cpp.obj
+
+src/process.i: src/process.cpp.i
+.PHONY : src/process.i
+
+# target to preprocess a source file
+src/process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.i
+.PHONY : src/process.cpp.i
+
+src/process.s: src/process.cpp.s
+.PHONY : src/process.s
+
+# target to generate assembly for a file
+src/process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/src/process.cpp.s
+.PHONY : src/process.cpp.s
 
 # Help Target
 help:
@@ -208,16 +221,17 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... common
 	@echo ... planning_main
-	@echo ... npc_map.obj
-	@echo ... npc_map.i
-	@echo ... npc_map.s
 	@echo ... planning_main.obj
 	@echo ... planning_main.i
 	@echo ... planning_main.s
-	@echo ... process.obj
-	@echo ... process.i
-	@echo ... process.s
+	@echo ... src/npc_map.obj
+	@echo ... src/npc_map.i
+	@echo ... src/npc_map.s
+	@echo ... src/process.obj
+	@echo ... src/process.i
+	@echo ... src/process.s
 .PHONY : help
 
 

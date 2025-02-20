@@ -1,20 +1,20 @@
 [
 {
   "directory": "E:/proiect/Cmake/c_make_planing_test/build",
-  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\npc_map.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\npc_map.cpp",
-  "file": "E:/proiect/Cmake/c_make_planing_test/npc_map.cpp",
-  "output": "CMakeFiles/planning_main.dir/npc_map.cpp.obj"
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe -Dcommon_EXPORTS @CMakeFiles/common.dir/includes_CXX.rsp -g -o CMakeFiles\\common.dir\\src\\npc_map.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\src\\npc_map.cpp",
+  "file": "E:/proiect/Cmake/c_make_planing_test/src/npc_map.cpp",
+  "output": "CMakeFiles/common.dir/src/npc_map.cpp.obj"
 },
 {
   "directory": "E:/proiect/Cmake/c_make_planing_test/build",
-  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\planning_main.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\planning_main.cpp",
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe -Dcommon_EXPORTS @CMakeFiles/common.dir/includes_CXX.rsp -g -o CMakeFiles\\common.dir\\src\\process.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\src\\process.cpp",
+  "file": "E:/proiect/Cmake/c_make_planing_test/src/process.cpp",
+  "output": "CMakeFiles/common.dir/src/process.cpp.obj"
+},
+{
+  "directory": "E:/proiect/Cmake/c_make_planing_test/build",
+  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/planning_main.dir/includes_CXX.rsp -g -o CMakeFiles\\planning_main.dir\\planning_main.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\planning_main.cpp",
   "file": "E:/proiect/Cmake/c_make_planing_test/planning_main.cpp",
   "output": "CMakeFiles/planning_main.dir/planning_main.cpp.obj"
-},
-{
-  "directory": "E:/proiect/Cmake/c_make_planing_test/build",
-  "command": "E:\\vscode\\Mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\planning_main.dir\\process.cpp.obj -c E:\\proiect\\Cmake\\c_make_planing_test\\process.cpp",
-  "file": "E:/proiect/Cmake/c_make_planing_test/process.cpp",
-  "output": "CMakeFiles/planning_main.dir/process.cpp.obj"
 }
 ]
